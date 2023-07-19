@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPT  Weather Review and Recommendations</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+
+    <script>
+        function handleSelection(locationKey, name) {
+            $('#search-button, .location-button').prop('disabled', true);
+
+            alert("Your request has been submitted, the answer will be loaded to your screen soon.");
+
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('handle_selection') }}",
+                data: { 'location': locationKey, 'name': name },
+                dataType: "json",
+                success: function (response) {
+                    $('#result-container').html(response.answer_html);
+                },
+                error: function (xhr, status, error) {
+                    console.log("Error:", error);
+                },
+                complete: function() {
+                    $('#search-button, .location-button').prop('disabled', false);
+                }
+            });
+        }
+    </script>
+
+</head>
+<body>
+    <center><h1>GPT  Weather Review and Recommendations</h1>
+    <p class="powered-by"><img src="/static/images/accu.jpg" width="25px" height="25px"><span>Powered by AccuWeather</span><img src="/static/images/accu.jpg" width="25px" height="25px"></p>
+    <p class="powered-by"><img src="/static/images/gpt_logo.png" width="25px" height="25px"><span>Powered by OpenAI API</span><img src="/static/images/gpt_logo.png" width="25px" height="25px"></p></center>
+
+    <div class="search-container">
+        <form action="{{ url_for('search') }}" method="post">
+            <input class="search-input" type="text" name="query" placeholder="Search location">
+            <button class="search-button" type="submit" id="search-button">Search</button>
+        </form>
+    </div>
+
+    {% if results %}
+    <div id="result-container" class="center-container">
+        {% for location, key in results.items() %}
+        <button class="location-button" type="button" onclick="handleSelection('{{ key }}', '{{ location }}')">{{ location }}</button>
+        <br>
+        {% endfor %}
+    </div>
+    {% endif %}
+</body>
+</html>
