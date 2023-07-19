@@ -11,6 +11,18 @@ This project utilizes the AccuWeather API and the GPT-3.5 Turbo model from OpenA
 
 ## Setup
 
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Weyaxi/GPTWeather/
+```
+
+2. Navigate to the project directory: 
+
+```bash
+cd GPTWeather
+```
+
 1. Install the required Python packages:
 
 ```bash
@@ -66,3 +78,7 @@ python3 app.py
 ### Results from GPT API
 
 ![image](https://github.com/Weyaxi/GPTWeather/assets/81961593/d9a41f66-1c2e-4c0b-aac8-12a15aeaa598)
+
+## Demo 
+
+
