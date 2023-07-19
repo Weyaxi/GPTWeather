@@ -23,18 +23,18 @@ git clone https://github.com/Weyaxi/GPTWeather/
 cd GPTWeather
 ```
 
-1. Install the required Python packages:
+3. Install the required Python packages:
 
 ```bash
 pip3 install -r requirements.txt
 ```
 
-2. Get your API keys:
+4. Get your API keys:
 
 - AccuWeather API Key: Sign up at [AccuWeather API](https://developer.accuweather.com/apis) to get your free API key.
 - OpenAI API Key: Sign up at [OpenAI](https://platform.openai.com/) to obtain your API key.
 
-3. Replace the placeholder API keys in the app.py file with your actual API keys:
+5. Replace the placeholder API keys in the app.py file with your actual API keys:
 
 ```python
 openai.api_key = "YOUR_OPENAI_API_KEY"
@@ -45,15 +45,13 @@ accu_api_key = "YOUR_ACCUWEATHER_API_KEY"
 
 1. Save the provided `app.py` file.
 
-2. Open a terminal and navigate to the project directory.
-
-3. Run the Flask application:
+2. Run the Flask application:
 
 ```bash
 python3 app.py
 ```
 
-4. The application will start running on your local server, typically at `http://127.0.0.1:5000/`.
+3. The application will start running on your local server, typically at `http://127.0.0.1:5000/`.
 
 ## Usage
 
