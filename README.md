@@ -67,17 +67,16 @@ python3 app.py
 
 ### Website
 
-![image](https://github.com/Weyaxi/GPTWeather/assets/81961593/91e2969d-e1c3-4732-98e3-60e42b1f03fa)
+![image](https://github.com/Weyaxi/GPTWeather/assets/81961593/101208b2-ee9b-4cf6-ac0f-c3c8d9d72cf0)
 
 ### Search Results
 
-![image](https://github.com/Weyaxi/GPTWeather/assets/81961593/b6e0527a-db8e-4c65-b639-b2d982367093)
+![image](https://github.com/Weyaxi/GPTWeather/assets/81961593/5570f68a-2960-42f6-bd34-9cb919fb48ac)
 
 ### Results from GPT API
 
-![image](https://github.com/Weyaxi/GPTWeather/assets/81961593/d9a41f66-1c2e-4c0b-aac8-12a15aeaa598)
+![image](https://github.com/Weyaxi/GPTWeather/assets/81961593/8635b5ef-5c7a-4ade-80c1-29bf2b5fbbe0)
 
 ## Video Demo 
 
-![demo2](https://github.com/Weyaxi/GPTWeather/assets/81961593/9b14420c-ffcc-495a-9341-f16716a0bcb6)
-
+![4](https://github.com/Weyaxi/GPTWeather/assets/81961593/e6c5b3a4-d469-46ba-af99-6d01aec89b55)
