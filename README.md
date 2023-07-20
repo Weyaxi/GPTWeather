@@ -77,6 +77,7 @@ python3 app.py
 
 ![image](https://github.com/Weyaxi/GPTWeather/assets/81961593/d9a41f66-1c2e-4c0b-aac8-12a15aeaa598)
 
-## Demo 
+## Video Demo 
 
-![1](         )
+![demo2](https://github.com/Weyaxi/GPTWeather/assets/81961593/9b14420c-ffcc-495a-9341-f16716a0bcb6)
+
